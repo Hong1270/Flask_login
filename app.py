@@ -71,7 +71,7 @@ def home():
     error=None
     id = session['login_user']
 
-    if request.method == 'POST':햣
+    if request.method == 'POST':
         content = request.form['content']
         conn = mysql.connect()
         cursor = conn.cursor()
